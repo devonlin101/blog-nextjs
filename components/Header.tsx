@@ -1,4 +1,5 @@
 import siteMetadata from '@/data/siteMetadata'
+import Script from 'next/script'
 import headerNavLinks from '@/data/headerNavLinks'
 import Image from 'next/image'
 // import Logo from '@/data/logo.svg'
@@ -42,6 +43,15 @@ const Header = () => {
         <SearchButton />
         <ThemeSwitch />
         <MobileNav />
+        <Script
+          async
+          id="Adsense-id"
+          crossOrigin="anonymous"
+          strategy="lazyOnload"
+          src={
+            'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5229295142210026'
+          }
+        />
       </div>
     </header>
   )
