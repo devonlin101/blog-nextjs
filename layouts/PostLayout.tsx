@@ -9,9 +9,11 @@ import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+// import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+import { FilePath } from 'tailwindcss/types/config'
 
 const editUrl = (path: FilePath) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
-const discussUrl = (path) =>
+const discussUrl = (path: FilePath) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(`${siteMetadata.siteUrl}/${path}`)}`
 
 const postDateTemplate: Intl.DateTimeFormatOptions = {
