@@ -13,6 +13,7 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between py-10">
       <div>
+        <meta name="impact-site-verification" content="59da59ae-3800-40b2-b07d-e90caaf9bc66" />
         <Analytics />
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
