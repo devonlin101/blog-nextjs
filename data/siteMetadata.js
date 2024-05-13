@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Kevin Lin Portfolio',
   author: 'Kevin Lin',
   headerTitle: 'Kevin Lin',
-  description: 'A personal dev blog',
+  description: 'a personal blog about Funny and Programming',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://kevinlin10.vercel.app',
