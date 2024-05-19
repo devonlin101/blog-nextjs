@@ -1,9 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
-import Script from 'next/script'
 import headerNavLinks from '@/data/headerNavLinks'
-import Image from 'next/image'
-import { Analytics } from '@vercel/analytics/react'
-// import Logo from '@/data/logo.svg'
+import Logo from '@/data/logo.svg'
 import Link from './Link'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
@@ -13,14 +10,9 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between py-10">
       <div>
-        <meta name="impact-site-verification" content="59da59ae-3800-40b2-b07d-e90caaf9bc66" />
-        <Analytics />
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
-            <div className="mr-3 rounded-full">
-              {/* <Logo /> */}
-              <Image src="/favicon.ico" width={40} height={40} alt="101 logo" />
-            </div>
+            <div className="mr-3">{/*<Logo />*/}</div>
             {typeof siteMetadata.headerTitle === 'string' ? (
               <div className="hidden h-6 text-2xl font-semibold sm:block">
                 {siteMetadata.headerTitle}
@@ -46,15 +38,6 @@ const Header = () => {
         <SearchButton />
         <ThemeSwitch />
         <MobileNav />
-        <Script
-          async
-          id="Adsense-id"
-          crossOrigin="anonymous"
-          strategy="lazyOnload"
-          src={
-            'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5229295142210026'
-          }
-        />
       </div>
     </header>
   )

@@ -7,10 +7,12 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'Portfolio website',
-    description: `A personal portfolio website build with nextjs and tailwindcss`,
-    imgSrc: '/static/images/portfolio.png',
-    href: 'https://devonblog.vercel.app/about',
+    title: 'A Search Engine',
+    description: `What if you could look up any information in the world? Webpages, images, videos
+    and more. Google has many features to help you find exactly what you're looking
+    for.`,
+    imgSrc: '/static/images/google.png',
+    href: 'https://www.google.com',
   },
   {
     title: 'The Time Machine',
