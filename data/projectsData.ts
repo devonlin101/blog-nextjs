@@ -7,12 +7,10 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'minesweeper game online',
+    description: `Free Online Minesweeper in Old Windows System style UI. Play the classic game in Beginner, Intermediate, and Expert mode.`,
+    imgSrc: '/static/images/minesweeper.png',
+    href: 'https://ohminesweeper.online/',
   },
   {
     title: 'The Time Machine',
