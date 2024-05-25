@@ -3,7 +3,7 @@ const siteMetadata = {
   title: "Kevin's blog",
   author: 'Kevin Lin',
   headerTitle: 'Devon Lin',
-  description: '| 一步一脚印 | one step at a time |',
+  description: '| 一步一个脚印 | one step at a time |',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://devonblog.vercel.app',

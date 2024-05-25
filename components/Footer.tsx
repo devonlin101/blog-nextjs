@@ -20,16 +20,9 @@ export default function Footer() {
           <SocialIcon kind="paypal" href={siteMetadata.paypal} size={6} />
           <SocialIcon kind="stripe" href={siteMetadata.stripe} size={6} />
         </div>
-        <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
-          <div>{siteMetadata.author}</div>
-          <div>{` • `}</div>
-          <div>{`© ${new Date().getFullYear()}`}</div>
-          <div>{` • `}</div>
-          <Link href="/">{siteMetadata.title}</Link>
-        </div>
         <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
           <Link href="https://github.com/timlrx/tailwind-nextjs-starter-blog">
-            all rights reserved @devonl101 llc
+            {`© ${new Date().getFullYear()}`} all ©rights reserved @devonl101 llc
           </Link>
         </div>
       </div>
